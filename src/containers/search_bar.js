@@ -14,9 +14,15 @@ export default class SearchBar extends Component {
         this.setState({term: event.target.value});
     }
 
+    onFormSubmit(event) {
+        event.preventDefault();
+     //after we prevent the form from being submitted, we can now fetch data with this function.
+
+    }
+
     render(){
         return(
-            <form className="input-group">
+            <form onSubmit={this.onFormSubmit} className="input-group">
                 <input
                 placeholder="Get your forecast here"
                 className="form-control"
