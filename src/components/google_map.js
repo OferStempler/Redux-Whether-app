@@ -22,4 +22,5 @@ class GoggleMaps extends Component {
 }
 
 
+
 export default GoggleMaps;
