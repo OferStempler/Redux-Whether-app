@@ -3,10 +3,11 @@
  */
 import React, { Component } from "react";
 
-class GoggleMaps extends Component {
+class GoogleMap extends Component {
 
     componentDidMount(){
-        new google.maps.Map(this.ref.map, {
+        new google.maps.Map(this.refs.map,
+            {
             zoom: 12,
             center: {
                 lat: this.props.lat,
@@ -21,6 +22,4 @@ class GoggleMaps extends Component {
 
 }
 
-
-
-export default GoggleMaps;
+export default GoogleMap;
