@@ -40,7 +40,6 @@ export  class WeatherList extends  Component {
         );
     }
 }
-
 function  mapStateToProps({ weather }) {
     return { weather }; // = { weather: weather }
 }
